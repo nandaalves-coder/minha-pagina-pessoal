@@ -1,82 +1,133 @@
-/* 1. Fundo da página com lilás claro */
+/* Fundo com gradiente suave lilás-rosado */
 body {
-  background-color: #f3e8ff; /* lilás bem suave */
-  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #f3e8ff, #fde2ff);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #3d1f5e;
-  margin: 20px;
+  margin: 0;
+  padding: 0;
 }
 
-/* 2. Título centralizado com roxo */
+/* Container para centralizar conteúdo */
+body > * {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Título com destaque e estilo fashion */
 h1 {
-  color: #6a0dad; /* roxo forte */
+  color: #6a0dad;
   text-align: center;
+  font-size: 42px;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  text-shadow: 1px 1px 3px rgba(106, 13, 173, 0.2);
 }
 
-/* 3. Parágrafo com fonte maior e justificado */
+/* Subtítulos elegantes */
+h2 {
+  color: #8434e6;
+  margin-top: 40px;
+  border-bottom: 2px solid #e0c3fc;
+  padding-bottom: 5px;
+  font-size: 26px;
+}
+
+/* Parágrafos com fonte maior, leitura leve */
 p {
   font-size: 18px;
-  line-height: 1.6;
+  line-height: 1.8;
   text-align: justify;
-  max-width: 800px;
-  margin: 20px auto;
+  margin: 20px 0;
+  background: #ffffffb8;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.05);
 }
 
-/* 4. Lista com espaçamento maior */
+/* Lista moderna e espaçada */
 ul {
-  list-style-type: disc;
-  margin: 20px auto;
-  padding-left: 40px;
-  line-height: 2;
-  max-width: 600px;
+  list-style: none;
+  padding-left: 0;
 }
 
-/* 5. Imagem com bordas arredondadas */
+ul li {
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  background: #f8f0ff;
+  border-left: 5px solid #c084f5;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+}
+
+/* Imagens estilosas com bordas suaves */
 img {
   display: block;
   margin: 20px auto;
-  max-width: 90%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(106, 13, 173, 0.15); /* sombra lilás */
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(106, 13, 173, 0.2);
 }
 
-/* 6. Tabela estilizada com tons de roxo */
+/* Tabela com visual elegante */
 table {
-  width: 90%;
-  margin: 30px auto;
+  width: 100%;
   border-collapse: collapse;
-  background-color: #ffffff;
-  box-shadow: 0 2px 10px rgba(106, 13, 173, 0.05);
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(106, 13, 173, 0.1);
 }
 
 th, td {
-  border: 1px solid #cba8f5;
-  padding: 12px;
+  padding: 15px;
   text-align: center;
+  border-bottom: 1px solid #eee;
 }
 
 th {
   background-color: #c084f5;
   color: white;
-  font-weight: bold;
+  font-size: 18px;
 }
 
 td {
-  background-color: #f7edff;
+  background-color: #fdf7ff;
 }
 
-/* 7. Link com efeito hover */
+/* Link com hover fashion */
 a {
   display: block;
   text-align: center;
-  color: #6a0dad;
-  text-decoration: none;
+  color: #8434e6;
   font-weight: bold;
-  margin-top: 30px;
+  margin: 30px auto;
   font-size: 18px;
-  transition: color 0.3s ease;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
 }
 
 a:hover {
-  color: #3d1f5e;
+  color: #4a008c;
+  transform: scale(1.05);
+}
+
+/* Responsivo pra celular */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  p, ul li, th, td {
+    font-size: 16px;
+  }
+
+  table, img {
+    width: 100%;
+  }
 }
