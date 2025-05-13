@@ -38,11 +38,12 @@ p {
   font-size: 18px;
   line-height: 1.8;
   text-align: justify;
-  margin: 20px 0;
-  background: #ffffffb8;
-  padding: 15px;
+  margin: 20px auto;
+  padding: 15px 25px;
   border-radius: 12px;
-  box-shadow: 0 1px 8px rgba(0,0,0,0.05);
+  background: #ffffffb8;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
+  max-width: 800px;
 }
 
 /* Lista moderna e espaçada */
@@ -98,19 +99,24 @@ td {
 
 /* Link com hover fashion */
 a {
-  display: block;
+  display: inline-block;
   text-align: center;
   color: #8434e6;
   font-weight: bold;
-  margin: 30px auto;
   font-size: 18px;
   text-decoration: none;
+  background: #fdf6ff;
+  padding: 12px 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease-in-out;
 }
 
 a:hover {
   color: #4a008c;
   transform: scale(1.05);
+  background: #f0e4ff;
 }
 
 /* Responsivo pra celular */
